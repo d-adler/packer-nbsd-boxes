@@ -45,7 +45,8 @@
     {
       "type": "vagrant",
       "output": "./builds/netbsd-{{user `release`}}-amd64{{user `build_suffix`}}-{{.Provider}}.box",
-      "keep_input_artifact": true
+      "keep_input_artifact": true,
+      "vagrantfile_template": "vagrantfiles/netbsd"
     }
   ],
   "provisioners": [
